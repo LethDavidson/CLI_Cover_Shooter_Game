@@ -1,6 +1,9 @@
 # CLI_Cover_Shooter_Game
 The code for a turn based cover shooter game in python. Features mission selection, weapons, destructible cover, ect.
 
+#Sound effects for weapons, and alien pain are from SoundBible.com and are not my own creation
+#Sectoid death sound is owned by 2k Games, I claim no ownership.
+#All music is owned by copyrighted sources, I claim no ownership over it  and will not use them in a commerical avenue.
 
 COMBAT:Stores combat features. No self functions as it's not really used anywhere other than itslef.
 Player and enemies take turns, lotsa functions for compartlamentalization of combat.

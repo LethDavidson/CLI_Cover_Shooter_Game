@@ -19,11 +19,11 @@ class Weapons(object):
         self.sound=sound
         self.reloadSound=reloadSound
 
+#********************************
+#RETURN WEAPON VARIABLES
+#********************************
     def getName(self):
-        return self.name
-    
-    def getMagAmmo(self):
-        return self.magSize.getAmmo()
+        return self.name 
 
     def getAcc(self):
         return self.accuracy
@@ -31,32 +31,33 @@ class Weapons(object):
     def getCritChance(self):
         return self.critChance
 
-    def getMagAmmoType(self):
-        return self.magSize.getAmmoType()
 
     def getDamage(self):
         return self.damage
     
-
     def getMagazine(self):
         return self.magSize
     
     def getMaxAmmo(self):
         return self.maxAmmo
-
+#********************************
+# CURENT MAGAZINE INSIDE OF WEAPON VARIABLES
+#********************************
     def getMagName(self):
         return self.magSize.getName()
 
     def __str__(self):
         return ("{NAME}".format(NAME=self.name))
 
-    #def holdMagazine(self):
-        
+    def getMagAmmo(self):
+        return self.magSize.getAmmo()
 
+    def getMagAmmoType(self):
+        return self.magSize.getAmmoType()
 
-
-#write ammo drain and reload functions
-
+#********************************
+#MODIFIY MAGAZINE
+#********************************
     def spendAmmo(self,amount):
         self.sound.play()
         self.magSize.spendBullets(amount)
@@ -86,6 +87,9 @@ class Bullet(Weapons):
             ammoType="normal"
         return ammoType
 
+#********************************
+#CREATE DIFFERENT BULLET TYPES
+#********************************
     def tracerBullets(self):
         if self.tracer==True:
             self.accuracy+=10

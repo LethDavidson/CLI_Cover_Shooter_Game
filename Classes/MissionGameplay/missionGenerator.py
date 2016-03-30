@@ -11,13 +11,10 @@ import os
 genTextFolder="TextInput/MissionGeneration"
 
 class missionGenerator(object):
-    """description of class"""
-
-    #def __init__(self,selectedWeapons):
-     #   self.selectedWeapons=selectedWeapons
+    """Creates the generates missions you can go on, along with their briefings"""
 
 #********************************
-#MISSION GENERATION
+#ACTOR CREATION
 #********************************
 
     def createPods():
@@ -28,6 +25,10 @@ class missionGenerator(object):
     def createPlayer():
         user=Player()
         return user
+
+#********************************
+#CREATE BRIEFINGS
+#********************************
 
     def importBriefingTexts(pod,alienCoverMap,playerCoverMap):
         coverDen=""
@@ -72,6 +73,9 @@ class missionGenerator(object):
             return brief
 #creates Textfile by fusing file location with file sent by mission gen, then chooses a line at random to return
 
+#********************************
+#COVER CREATION
+#********************************
 
     def createBattleMaps(coverManager):
         alienBattleMap=missionGenerator.createAlienBattleMap(coverManager)
@@ -86,7 +90,22 @@ class missionGenerator(object):
         alienBattleMap=coverManager.coverLayout()
         return alienBattleMap
 
+#********************************
+#CREATE MISSION DATA
+#********************************
 
+    def createBattleMaps(coverManager):
+        alienBattleMap=missionGenerator.createAlienBattleMap(coverManager)
+        playerBattleMap=missionGenerator.createPlayerBattleMap(coverManager)
+        return alienBattleMap,playerBattleMap
+
+    def createPlayerBattleMap(coverManager):
+        playerBattleMap=coverManager.coverLayout()
+        return playerBattleMap
+
+    def createAlienBattleMap(coverManager):
+        alienBattleMap=coverManager.coverLayout()
+        return alienBattleMap
 
     def generateMissionVariables():
         pod=missionGenerator.createPods()

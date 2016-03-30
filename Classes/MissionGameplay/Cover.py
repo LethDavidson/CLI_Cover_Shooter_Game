@@ -17,7 +17,7 @@ class Cover(object):
     #randomly generates a cover map x number of times. Player and alien will both pull map from results. Give more structure later so maps aren't balls.
         holdCover={}
         covLayStorage={}
-        RNG=random.randint(3,7)
+        RNG=random.randint(4,8)
 
         for b in range(4):
             for i in range (RNG):
@@ -84,6 +84,10 @@ class Cover(object):
         for each in range(len(self.layout)):
             coverPoints+=1
         return coverPoints
+
+#**********************************
+#PLAYING AUDIO
+#**********************************
 
     def playHitSound(self):
         self.uponHitSound.play()

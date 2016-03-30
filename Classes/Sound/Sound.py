@@ -11,12 +11,16 @@ musicPath="SoundFiles/Music"
 
 setupFilePath=os.path.join
 
+#gloabals just to make writing paths easier. Any better to read? Not sure, but it seems like a place for gloabals.
 
 class Sound(object):
-    """Holds and plays all the various sounds"""
+    """Holds and creates all the various sounds"""
 
     pygame.init()
 
+#********************************
+#CREATE SOUND EFFECTS
+#********************************
 
     def weaponSounds(self,weapon):
         pygame.mixer.init()
@@ -92,6 +96,10 @@ class Sound(object):
 
         returnedSound=holdReloadSounds.get(gun)
         return returnedSound
+
+#********************************
+#CREATE GAME MUSIC
+#********************************
 
     def gameMusic(self,selection):
         holdGameMusic={1:setupFilePath(musicPath,"Mayham.mp3"),

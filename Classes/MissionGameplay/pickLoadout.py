@@ -8,7 +8,7 @@ class pickLoadout(object):
     """Selects weapons, items, and any additional tools for the upcoming mission"""
     def __init__(self):
         self.openSlots=5
-    
+ #i don't know what this variable is for??   
 
     def createWeaponList(self):
         weaponList=[]
@@ -39,7 +39,7 @@ class pickLoadout(object):
         Knife=Weapons(100,20,1000,40,knifeMag,knifeSound,None,"Knife")
         weaponList.append(Rifle),weaponList.append(SMG),weaponList.append(Shotgun),weaponList.append(Handgun),weaponList.append(Knife)
         return weaponList
-
+#creates all of the weapons to be used in pick Loadout and for all actors
 
 
 
@@ -93,4 +93,4 @@ class pickLoadout(object):
             print ("Not a valid choice")
         os.system('cls' if os.name=='nt' else 'clear')
         return pickedWeapons
-        
+#select prim and secondary. There's a way to consolidate picking both to less text, look into it later

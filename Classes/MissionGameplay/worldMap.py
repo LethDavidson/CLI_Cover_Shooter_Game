@@ -16,13 +16,17 @@ class worldMap(object):
     def __init__(self):
         self.pickedMission=None
 #********************************
-#MISSION SELECTION
+#CREATE MUSIC
 #********************************
     pygame.init()
     def createMusic():
         music=Sound().worldMapMusic(1)
         pygame.mixer.music.load(music)
         pygame.mixer_music.play()
+
+#********************************
+#MISSION SELECTION
+#********************************
 
     def importMissions(self):
         missions=[]
@@ -70,8 +74,6 @@ class worldMap(object):
             return selection
         else:
             print ("Try again")
-            
-
 
 
     def getSelectedMission(self):

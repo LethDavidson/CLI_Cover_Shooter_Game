@@ -3,24 +3,13 @@ from itertools import count
 from collections import Counter
 
 class Items(object):
-    """description of class"""
-
+    """Creates all of the items"""
 
     def getName(self):
         return self.name
 
-
     def __str__(self):
         return ("{NAME}".format(NAME=self.name))       
-#move Grenade/Medkit/Magazines in here.
-
-#grenade
-
-#medkit
-
-#magazine
-#full of bullet objects, max count is determined by weapon type user has. That info will be passed onto it.
-#or make dif magazines for each type of weapon?
 
 class Magazine(Items):
     def __init__(self,size,ammoType,name):
@@ -38,19 +27,24 @@ class Magazine(Items):
                 self.holdBullets.pop(0)
             else:
                 print ("Can't fire, out of ammo!")
-    
+#********************************
+#RETURN VARIABLES
+#********************************   
     def getAmmo(self):
         return len(self.holdBullets)
+#Get all of the current bullets
 
     def getAmmoType(self):
         return self.ammoType
+#gets what type of bullets they are
 
     def getAmmoAmount(self):
         return self.startingSize
+#gets the full starting size of the mag
 
     def getCurrentAmmoAmount(self):
         return (len(self.holdBullets))
-
+#also returns current bullets? I think I redid some work here... hmm, look for that.
 
 
 
@@ -64,13 +58,9 @@ class ammoBelt(Items):
         self.ammoType=ammoType
         self.ammoAmount=ammoAmount
         for each in range(self.startingMags):
-#pass this the actual magazine object somehow and extract the actual object's name that way later.
             self.holdingMags.append(Magazine(self.ammoAmount,magType, ammoType.getName()))
 
     def getMags(self):
-        #magNames=[]
-        #for each in range(len(self.holdingMags)):
-            #magNames.append(self.holdingMags[each].getName())
         returnedMags=[]
         a=0
         b=0
@@ -88,12 +78,6 @@ class ammoBelt(Items):
                 d+=1
             elif self.holdingMags[each].getName()=="fake Knife Mag":
                 e+=1
-
-        #for idx, type in enumerate (self.holdingMags):
-         #   if rifleMagName == self.holdingMags[type].getName():
-          #      idx+=1
-           # elif smgMagName == self.holdingMags[type].getName():
-            #    x+=1
         rifleMagCount="Rifle Magazines: " + str(a)
         smgMagCount="SMG Magazines: " + str(b)
         shotgunMagCount="Shotgun Mags: " + str(c)
@@ -111,6 +95,11 @@ class ammoBelt(Items):
             returnedMags.append(knifeMags)
         
         return returnedMags
+#get the type of magazine and how many there are. This is a real mess, there must be better ways.
+
+#********************************
+#CHANGE HELD MAGAZINE OBJECTS
+#********************************
 
     def addMag(self,mag):
         self.holdingMags.append(mag)
@@ -122,11 +111,9 @@ class ammoBelt(Items):
         else:
             returnedMag=self.holdingMags[0]
             self.holdingMags.pop(0)
-        return returnedMag
-        
+        return returnedMag      
 
-    def getMagName(self):
-        return self.name
+
 
     def changeMag(self,mag):
         #returnedMag=self.holdingMags[0]
@@ -135,14 +122,11 @@ class ammoBelt(Items):
 
         #return returnedMag
 
+#********************************
+#RETURN CLASS VARIABLES
+#********************************
     def getMagNumber(self):
         return self.holdingMags
-        
-        """x=0
-        magCount=[]
-        line=""
-        for each in range(len(self.holdingMags)):
-            x+=1
-            line=(x,". ",self.holdingMags[each].getCurrentAmmoAmount())
-            magCount.append(line)
-        return magCount"""
+
+    def getMagName(self):
+        return self.name

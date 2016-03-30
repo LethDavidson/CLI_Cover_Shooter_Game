@@ -48,6 +48,7 @@ class Combat(object):
         while playerTurn==1:  
                 currentWeapon=user.getCurrentPlayerWeapon()
                 playerAction=Combat.userInterface(pod,user,alienBattleMap,playerBattleMap,shotMissSound)
+
                 if playerAction[0]==1 and currentWeapon.getMagAmmo() > 0:
                     finishShoot=Combat.playerShoot(pod,user,alienBattleMap,playerBattleMap,shotMissSound)
                     if finishShoot ==0: 
@@ -57,7 +58,8 @@ class Combat(object):
                         user.tickAimTimerDown(1)
 
                 elif playerAction[0]==1 and currentWeapon.getMagAmmo() <= 0:     
-                      print ("Can't fire, out of ammo!")
+                      input ("Can't fire, out of ammo! Hit any key to return.")
+                      os.system('cls' if os.name=='nt' else 'clear')
                       continue  
                 elif playerAction[0]==2:
                     finishItem=Combat.playerItem(pod,user,alienBattleMap,playerBattleMap,shotMissSound)
@@ -82,13 +84,16 @@ class Combat(object):
                     continue
                 elif playerAction[0]==7:
                     user.reloadGun(0)
-                
+                    os.system('cls' if os.name=='nt' else 'clear')
+                    print ("Magazine Loaded!")
                 elif playerAction[0]==8:
                     finishReload=Combat.manualReload(user,playerEquipment,playerAction[1],playerAction[2])
                     if finishReload==0:
                         continue
                     else:
                         user.tickAimTimerDown(1)
+                        print ("Ready to go!")
+                        
                 elif playerAction[0]==9:
                     print ("You get the hell out of there")
                     return 1
@@ -101,9 +106,6 @@ class Combat(object):
 #playeraction[0] is command choice, [1] and [2] are backupmag and rawmagammoinfo for manualreload to avoid creating duplicates in that function
                     
                 user.turnPass(Combat.passTurn())
-                #print ("ALIEN BATTLE MAP")
-                #for each in alienBattleMap:
-                    #print (each,": Cover Value:",alienBattleMap[each].getCovValue()," Aim Penalty:",alienBattleMap[each].getAimPen()," Cover HP:",alienBattleMap[each].getHP())
                 
                 print ("\n")
                 playerTurn=0
@@ -118,12 +120,8 @@ class Combat(object):
                 for each in range(0,len(pod)):
                     t+=1
                     actions.append(pod[each].action())
-#move aliencover to 1 index from0 index if this doesn't work.
-#WAIT fuck no. I'm getting the number of items, not the exact number when I'm using range(len(ect)). I need to check the value of each number, not how many it has. It's a list of int, not obj, damn that should work. Gah
                     c=0
                     while c==0:
-                      #i just need to figure out which element to delete upon the lopp so that it doens't select the same ones over and over or get into a loop where the answer is deleted before it'sp oroperly checked.  
-                        #pastCoverPoints.append(pod[each].returnCoverPosition())
 
                         alienCoverStats.append(pod[each].takeCover(alienBattleMap,pod,each))
                         if pod[each].returnCoverPosition() in takenCover:
@@ -132,10 +130,7 @@ class Combat(object):
                             continue
                         else:
                             takenCover.append(pod[each].returnCoverPosition())
-                            print (range(len(takenCover)))
                             c=1
-
-
                     
                     if actions[each]=="shoot":
                         Combat.alienShoot(each,pod,user,playerBattleMap,playerCovPos,shotMissSound)
@@ -153,10 +148,7 @@ class Combat(object):
                 actions[:]=[]
 
                 print ("End of alien turn.\n\n")
-#send all of this mag data rather than creating it again once it works.
 
-#it only sends back the corrent ammo amount/correct mag if it's 1. hmm...
-#fixed it, I put a 0 in the wrong place.
     def manualReload(user,playerEquipment,backupMags,rawBackupMagNumbers):
                 currentWepBelt=user.getSpecificAmmoBelt()
                 p=0
@@ -166,27 +158,13 @@ class Combat(object):
                         if p == (len(rawBackupMagNumbers[currentWepBelt])):
                             p=0
                             print ("\n")
-                approvedMag=0
-                while approvedMag==0:
-                    pickMag=(input("Which magazine do you reload with? Or hit B to go back?"))
-                    if not pickMag:
-                        continue
-                    if pickMag == "b" or pickMag == "B":                    
-                        os.system('cls' if os.name=='nt' else 'clear')
-                        return 0
-                    try:
-                        pickMag=(int(pickMag)-1)
-                    except ValueError:
-                        print ("Not a number")
-                    
-                        continue
-                    if pickMag not in range (len(rawBackupMagNumbers[currentWepBelt])):
-                        continue
-                    else:
-                        approvedMag=1
 
+                
+                pickMag=Combat.errorCheckForInt(rawBackupMagNumbers[currentWepBelt],"Which magazine do you reload with? Or hit B to go back?")
+                if pickMag == "x":
+                    return 0
                 user.reloadGun(pickMag)
-                print ("Ready to go!")
+
                         
 
     #*********************************************************************************
@@ -196,34 +174,17 @@ class Combat(object):
 
     def playerShoot(pod,user,alienBattleMap,playerBattleMap,shotMissSound):
         print (pod)
+        choice=Combat.errorCheckForInt(pod,"\nChoose which enemy to drop, or enter B to go back.: ")
+        if choice=="x":
+            return 0
 
-        approvedShot=0
-        while approvedShot==0:
-                choice=(input("\nChoose which enemy to drop, or enter B to go back.: "))
-                if not choice:
-                    continue
-                if choice == "b" or choice == "B":                    
-                    os.system('cls' if os.name=='nt' else 'clear')
-                    return 0
-                try:
-                    choice=int(choice)
-                except ValueError:
-                    print ("Not a number")
-                    
-                    continue
-                if choice not in range (len(pod)):
-                    continue
-                else:
-                    approvedShot=1
-
-
-        listChoice=choice-1
+        listChoice=choice
         os.system('cls' if os.name=='nt' else 'clear')
+        print (listChoice)
         for x in range (len(pod)+1):
             x+=1
-            if choice==x:
+            if choice+1==x:
                 targetHit=user.gunshotAccuracy(pod[listChoice].getDefense(),alienBattleMap,1)
-
             else:
                 continue
         
@@ -243,7 +204,6 @@ class Combat(object):
                 
             elif targetHit==3:
                 print ("You hit it's cover!")
-                #alienBattleMap[coverPosition].playHitSound()
                 alienBattleMap[coverPosition].takeDamage(user.returnWepDamage())
 
 
@@ -258,11 +218,11 @@ class Combat(object):
             y+=1
             print (y,": ",playerInventory[each])
 
-        selection=Combat.errorCheckForInt(len(playerInventory),"Which item will you use? Or hit B to go back:")
-
-        selection=(int(selection))-1
-        if selection in range(len(playerInventory)):
-                    
+        selection=Combat.errorCheckForInt(playerInventory,"Which item will you use? Or hit B to go back:")
+        if selection =="x":
+            return 0
+        
+        if selection in range(len(playerInventory)):                    
             itemToUse=user.getSpecificInventoryItem(selection)
                 
             if itemToUse.getName() == "Grenade":
@@ -270,37 +230,30 @@ class Combat(object):
                    for each in range(len(pod)):
                         x+=1
                         print (x,": ", pod[each].getName(),", ",end="")
-                   approvedEnemy=0
-                   while approvedEnemy==0:
-                       chooseEnemy=(input("Use grenade on which enemy? or hit B to go back\n"))
-                       if not chooseEnemy:
-                           continue
-                       if chooseEnemy == "b" or chooseEnemy == "B":
-                           return 0
-                       try:
-                        chooseEnemy=(int(chooseEnemy)-1)
-                       except ValueError:
-                           print ("Not a number")
-                           continue
-                       if chooseEnemy not in range (len(pod)):
-                           continue
-                       print ("About to go into item usage")
-                       if chooseEnemy in range(len(pod)):
-                           itemToUse.playSound()
-                           print ("You hit {ENEMY} with a grenade!".format(ENEMY=pod[chooseEnemy].getName()))
-                           pod[chooseEnemy].damage(itemToUse.explode())
-                           user.removeItem(selection)
-                           checkTargetHealth=pod[chooseEnemy].damage(0)
-                           if checkTargetHealth==0:
-                                if chooseEnemy in range(len(pod)):
-                                    pod.pop(chooseEnemy)
+#remember to lower chooseenemy by 1 after this
+                   chooseEnemy=Combat.errorCheckForInt(pod,"Use grenade on which enemy? or hit B to go back\n")
+                   if chooseEnemy=='x':
+                        return 0
+                   #chooseEnemy=-1
 
-                           return 1
+                   #if chooseEnemy in range(len(pod)):
+                   itemToUse.playSound()
+                   print ("You hit {ENEMY} with a grenade!".format(ENEMY=pod[chooseEnemy].getName()))
+                   pod[chooseEnemy].damage(itemToUse.explode())
+                   user.removeItem(selection)
+                   checkTargetHealth=pod[chooseEnemy].damage(0)
+                   if checkTargetHealth==0:
+                        if chooseEnemy in range(len(pod)):
+                            pod.pop(chooseEnemy)
+
+                   return 1
             if itemToUse.getName() == "Medkit":
                 healSelection=(input("Heal yourself for {AMOUNT}? Y/N or B for back.\n".format(AMOUNT=itemToUse.getHealAmount())))
                 if healSelection=="Y" or healSelection=="y":
                     user.healing(itemToUse.getHealAmount())
                     return 1
+                else:
+                    return 0
 
     def spendPlayerAmmo(weapons):
         weapons.spendAmmo(1)
@@ -430,25 +383,23 @@ class Combat(object):
         return self.done
 
     def errorCheckForInt(listReference,specificPrompt):
-        approvedCheck=0
-        while approvedCheck==0:
+        while True:               
                 checkedValue=(input(specificPrompt))
-                if not checkedValue:
-                    continue
-                if checkedValue == "b" or checkedValue == "B":
+                if checkedValue.lower() == "b":
+                    checkedValue="x"
                     os.system('cls' if os.name=='nt' else 'clear')
                     return checkedValue
                 try:
                     checkedValue=int(checkedValue)-1
-                except ValueError:
-                    print("That's not a number mate, try again.")
-                    continue
-                if checkedValue not in range(len(listReference)):
-                    continue
-                else:
-                    approvedCheck=1
+                    listReference[checkedValue]
                     return checkedValue
-   #used when I want a specific index for a list later, and to keep out wrong numbers, letters, or blank spaces.    
+                except (IndexError, ValueError):
+                    print("No good, try again.")
+                    continue
+
+   #used when I want a specific index for a list later, and to keep out wrong numbers, letters, or blank spaces.   
+
+
         
     #********************************************************************
     #MAIN LOOPS
@@ -498,7 +449,6 @@ class Combat(object):
                     done=1
                     os.system('cls' if os.name=='nt' else 'clear')
                     break
-                print ("back to main, done=",done)
                 done=Combat.checkIfVictory(pod,user)
                 
                 time.sleep(0.5)

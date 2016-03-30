@@ -100,7 +100,8 @@ class Player(object):
             #print ("Damn, you missed!")"
                 targetHit=2
         return targetHit
- 
+ #this is some of the oldest code in the program, likely a shitshow.
+
     def useItem(self):
         for idx,item in enumerate(self.inventory):
             idx+=1
@@ -131,7 +132,7 @@ class Player(object):
         sendItem=self.inventory[item]
         return sendItem,item
 
-    #make this adaptable to more than 2 weapons later on
+
     def switchWeapons(self):
         if self.currentWeapon==self.weapons[0]:
             self.currentWeapon=self.weapons[1]
@@ -140,6 +141,7 @@ class Player(object):
         elif self.currentWeapon==self.weapons[1]:
             self.currentWeapon=self.weapons[0]
             print(self.currentWeapon)
+    #make this adaptable to more than 2 weapons later on
     
     def hunkerDown(self):
         self.defense+=30
@@ -154,24 +156,15 @@ class Player(object):
         elif self.currentWeapon==self.weapons[1]:
             return 1        
 
-
-#make this work with magazine objects
     def reloadGun(self,pick):
-        if self.currentWeapon==self.weapons[0]:
-            
-            print ("current wep = wep [0]")
-            newMag=self.ammoBelt[0].removeMag(pick)
-            print (newMag.getName())
-            oldMag=self.currentWeapon.reload(newMag)
-            self.ammoBelt[0].changeMag(oldMag)
+        x=0
         if self.currentWeapon==self.weapons[1]:
+            x=1
 
-            print ("current wep = wep [1]")
-            newMag=self.ammoBelt[1].removeMag(pick)
-            print (newMag.getName())
-            oldMag=self.currentWeapon.reload(newMag)
-            self.ammoBelt[1].changeMag(oldMag)
-    
+        newMag=self.ammoBelt[x].removeMag(pick)      
+        oldMag=self.currentWeapon.reload(newMag)
+        self.ammoBelt[x].changeMag(oldMag)
+
 #**************************************************
 #ALTER YOUR STATS (HP/DEF/AIM/STATUS)
 #**************************************************
@@ -186,7 +179,7 @@ class Player(object):
 
     def status(self,ailment):
         #status aliments, good and ill, will check here to see if they pass or fail
-        #taunt is 1, aiming is 2, resisted is 0
+        #taunt is 1, resisted is 0
         inflicted=0
         checking=ailment
         baseResist=70
@@ -218,9 +211,10 @@ class Player(object):
         self.buff=self.buff-timeTick
         if self.buff<0:
             self.buff=0
+#ticks down aiming so it only lasts a certain number of turns.
 
 #*********************************************
-# PLAYER ITEMS AND WEAPONS
+# EQUIPS PLAYER ITEMS AND WEAPONS
 #*********************************************
 
     def playerWeapons(self,selectedWeapons):
@@ -247,15 +241,18 @@ class Player(object):
     def getHP(self):
         return self.hp
 
+    def returnDef(self):
+        return self.defense
+
+    def playDeathSound(self):
+        self.deathSound.play()
 
     def returnPlayerWeapons(self):
         return self.weapons
 
-    def returnDef(self):
-        return self.defense
-    
-    def getItemNames(self,itemNum):
-        return self.inventory[itemNum].getName()
+#***********************************
+#RETURN WEAPON VARIABLES
+#***********************************
 
     def returnWepDamage(self):
         return self.weapons[0].getDamage()
@@ -266,11 +263,17 @@ class Player(object):
     def getCurrentPlayerWeapon(self):
         return self.currentWeapon
 
+#***********************************
+#RETURN AMMO BELT VARIABLES
+#***********************************
+
     def getBackupMags(self):
         return self.ammoBelt[0].getMags(), self.ammoBelt[1].getMags()
+#gets how many magazines there are in each belt
 
     def getBackupMagAmount(self):
         return self.ammoBelt[0].getMagNumber(), self.ammoBelt[1].getMagNumber()
+#gets number of bullets in each magazine in the ammo belt
         
     def getBackupMagsName(self):
         primMagName=self.ammoBelt[0].getMags()
@@ -281,7 +284,11 @@ class Player(object):
         
         
         return primMagName,secMagName
+#Gets the names of the ammo belts and cuts off list brackets
 
+#***********************************
+#RETURN STATUS VARIABLES
+#***********************************
     def getCoverValue(self):
         if self.cover==40:
             cover="High cover"
@@ -290,9 +297,6 @@ class Player(object):
         else:
             cover="No cover"
         return cover
-
-    def playDeathSound(self):
-        self.deathSound.play()
 
     def getTauntStatus(self):
         if self.imparement==1:
@@ -307,8 +311,6 @@ class Player(object):
         else:
             returnAim=("not taking aim")
         return returnAim
-
-
 
     def getHitChance(self,targetInfo):
 #largely copied code. Consolidate gunshot acc and this somehow
@@ -333,6 +335,10 @@ class Player(object):
             adjustedHitChance=100
         return adjustedHitChance
 
+#***********************************
+#RETURN ITEM OBJECT VARIABLES
+#***********************************
+
 
     def getInventory(self):
         return self.inventory
@@ -340,3 +346,6 @@ class Player(object):
     def getSpecificInventoryItem(self,item):
         print (self.inventory[item])
         return self.inventory[item]
+
+    def getItemNames(self,itemNum):
+        return self.inventory[itemNum].getName()

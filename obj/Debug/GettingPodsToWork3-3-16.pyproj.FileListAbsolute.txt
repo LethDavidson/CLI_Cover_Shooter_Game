@@ -1,0 +1,104 @@
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\bin\wfastcgi.py
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\web.config
+c:\users\leth\documents\visual studio 2015\Projects\GettingPodsToWork3-3-16\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-8-16 aim_cover_pen_Done\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-9-16 NewMain\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\GettingPodsToWork3-20-16 PlayerLoadoutsWorking\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-21-16 bullets_and_magazine_objects_working\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-22-16 ReloadingWorksabouttodoGUI\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 moreUI\GettingPodsToWork3-3-16\obj\Debug\web.debug.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\attach_server.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_repl.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\visualstudio_py_util.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\__init__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\__main__.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\bin\AzureSetup.cfg
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\bin\wfastcgi.py
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\web.config
+C:\Users\Leth\Documents\Visual Studio 2015\Projects\CoverCombat 3-24-16 reWriteItemCode\GettingPodsToWork3-3-16\obj\Debug\web.debug.config

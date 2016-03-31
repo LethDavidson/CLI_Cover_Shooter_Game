@@ -329,7 +329,7 @@ class Combat(object):
                 for each in range(len(pod)):
                     alienDefense=pod[each].getDefense()
                     chanceToHit=user.getHitChance(alienDefense)
-                    print ("\t\t\t{ENEMY} has {HP} HP and is behind {COVERTYPE} at enemy point {COVLOCATION} with a {ENEMYHITCHANCE}% chance to hit you.\n\t\t\tYou have a {CHANCETOHIT}% chance to hit {ENEMY}.\n".format(ENEMY=pod[each].getName(),HP=pod[each].getHP(),COVERTYPE=pod[each].returnCoverValue(),COVLOCATION=pod[each].returnCoverPosition()+1,ENEMYHITCHANCE=pod[each].calcHitChance(user.returnDef()),CHANCETOHIT=chanceToHit))
+                    print ("\t\t\t{ENEMY} has {HP} HP and is behind {COVERTYPE} at enemy point {COVLOCATION} with a {ENEMYHITCHANCE}% chance to hit you.\n\t\t\tYou have a {CHANCETOHIT}% chance to hit {ENEMY}. Enemy cover point {COVLOCATION} has {COVHP} HP remaining.\n".format(ENEMY=pod[each].getName(),HP=pod[each].getHP(),COVERTYPE=pod[each].returnCoverValue(),COVLOCATION=pod[each].returnCoverPosition()+1,ENEMYHITCHANCE=pod[each].calcHitChance(user.returnDef()),CHANCETOHIT=chanceToHit,COVHP=alienBattleMap[pod[each].returnCoverPosition()].getHP()))
                 #print (user.returnPlayerWeapons.getname())
                 print ("Weapon:",currentWeapon.getName(),"\tAmmo:", currentWeapon.getMagAmmo())
 #It has something to do with this. FIrst and second ammo belt position don't hange, as such it's not atually uipdating. 

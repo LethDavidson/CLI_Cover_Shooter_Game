@@ -318,9 +318,7 @@ class Combat(object):
             totalHealth=[]
             playerTurn=1
             while playerTurn==1:
-                for each in range(len(pod)):
-                    alienDefense=pod[each].getDefense()
-                    chanceToHit=user.getHitChance(alienDefense)
+
                 #this is the big fucking confusing HUD.
 
                 currentWeapon=user.getCurrentPlayerWeapon()
@@ -329,6 +327,8 @@ class Combat(object):
                 print ("{player} HP: {pHP}\nIn {COVTYPE} at point {COVLOCATION} out of {TOTALCOVPOINTS}.\nYou are {TAUNTSTATUS}, and {AIMSTATUS}.\n".format(player=user.getName(),pHP=user.getHP(),COVTYPE=user.getCoverValue(),COVLOCATION=user.getCoverPosition()+1,TOTALCOVPOINTS=len(playerBattleMap),TAUNTSTATUS=user.getTauntStatus(),AIMSTATUS=user.getAimStatus()))
                 print ("\t\t\tTotal Alien Cover Points: {COVPOINTS}".format(COVPOINTS=len(alienBattleMap)))
                 for each in range(len(pod)):
+                    alienDefense=pod[each].getDefense()
+                    chanceToHit=user.getHitChance(alienDefense)
                     print ("\t\t\t{ENEMY} has {HP} HP and is behind {COVERTYPE} at enemy point {COVLOCATION} with a {ENEMYHITCHANCE}% chance to hit you.\n\t\t\tYou have a {CHANCETOHIT}% chance to hit {ENEMY}.\n".format(ENEMY=pod[each].getName(),HP=pod[each].getHP(),COVERTYPE=pod[each].returnCoverValue(),COVLOCATION=pod[each].returnCoverPosition()+1,ENEMYHITCHANCE=pod[each].calcHitChance(user.returnDef()),CHANCETOHIT=chanceToHit))
                 #print (user.returnPlayerWeapons.getname())
                 print ("Weapon:",currentWeapon.getName(),"\tAmmo:", currentWeapon.getMagAmmo())
